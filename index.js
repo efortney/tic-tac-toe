@@ -165,3 +165,8 @@ squareSix.addEventListener('click', updateGrid);
 squareSeven.addEventListener('click', updateGrid);
 squareEight.addEventListener('click', updateGrid);
 squareNine.addEventListener('click', updateGrid);
+
+
+document.querySelector('button').addEventListener('click', () => {
+  document.location.reload();
+});
