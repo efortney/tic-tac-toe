@@ -1,0 +1,35 @@
+.game-container {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-board {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 110px 110px 90px;
+    grid-template-rows: 90px 90px 90px;
+    column-gap: auto;
+    row-gap: 10px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    background-color: white;
+}
+
+#metrics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner {
+    display: none;
+}
