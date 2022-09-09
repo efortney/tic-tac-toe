@@ -25,6 +25,8 @@ const grid = [
   [false, false, false],
 ];
 
+const squareMap = new Map();
+
 const handleCatsGame = () => {
   gameBoard.style.pointerEvents = 'none';
   isGameOver = true;
@@ -122,6 +124,10 @@ const handleSquareSelection = (id) => {
 
 const updateGrid = (e) => {
   const id = e.currentTarget.id;
+  if(squareMap.has(id)) {
+    return;
+  }
+  squareMap.set(id, true);
   handleSquareSelection(id);
   switch (id) {
     case 'one':
